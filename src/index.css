@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+.homeImg{
+  background-image: url(./assets/HeroLine.svg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.homeImg1{
+  background-image: url(./assets/Line.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.homeImg2{
+  background-image: url(./assets/line2.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.homeImg3{
+  background-image: url(./assets/line3.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.creative{
+  background-image: url(./assets/creative.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.adline{
+  background-image: url(./assets/adline.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hover-change .icon,
+.hover-change h2,
+.hover-change p {
+  color: black; /* default color */
+  transition: color 0.3s ease;
+}
+
+.hover-change:hover .icon,
+.hover-change:hover h2,
+.hover-change:hover p {
+  color: #ff6a39;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.animate-slide-right {
+  animation: slide-right 40s linear infinite;
+}
+
+@media (max-width: 1300px) {
+  .lies {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .nav {
+    width: auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  .px1{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .menu {
+    display: none;
+  }
+  .menu1 {
+    display: block;
+  }
+}
+
+
