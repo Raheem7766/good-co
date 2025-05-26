@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Hero from "../assets/Hero.png";
+import Hero from "../assets/hero.png";
 import check from "../assets/check.svg";
 import Footer from "../components/Footer";
 
